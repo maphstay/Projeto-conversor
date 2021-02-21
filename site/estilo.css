@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body {
+    background:#ccc; 
+    color:#344351;
+    cursor:auto;
+    font-family:montserrat,sans-serif;
+    font-style:normal;
+    font-weight:400;
+    line-height:1.5;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+    -ms-interpolation-mode:bicubic;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+select {
+    width:100%;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-color:#fafafa;
+    border-radius:0;
+    border-style:solid;
+    border-width:1px;
+    border-color:#ccc;
+    color:rgba(0,0,0,.75);
+    font-family:inherit;
+    font-size:.875rem;
+    line-height:normal;
+    padding:.5rem;
+    border-radius:0;
+    height:2.3125rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+div#moedas {
+    padding: 20px 0;
+    background-color: thistle;
+    box-shadow: 0px 2px 5px grey;
+    margin: 0;
+}
+
+div, h1, form {
+    margin:0;
+    padding:0;
+}
+
+.column, .columns {
+    position:relative;
+    padding-left:.9375em;
+    padding-right:.9375em;
+    width:100%;
+    float:left; 
+}
+
+.small-12 {
+    width:100%;
+}
+
+.large-4 {
+    width:33.33333%;
+}
+
+.wrap-input-cotacao {
+	border-radius: 100px;
+	width: 100%;
+	max-width: 100%;
+	padding: 3px;
+	margin-bottom: 45px;
+	position: relative;
+}
+
+.wrap-input-cotacao input, .wrap-input-cotacao select {
+	background-color: #FFFFFF;
+	border-radius: 100px;
+	width: 89%;
+	max-width: 100%;
+	float: right;
+	margin: 0;
+	padding: 0 15px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #1251a0;
+	text-transform: uppercase;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.wrap-input-cotacao.wrap-valor {
+    background: -52px -188px #1251a0;
+}
+
+.selectValidState select, select.selectValidState {
+    background-color: #b8f5b1;
+}
+
+select:hover {
+    background-color: #f3f3f3;
+    border-color: #999;
+}
+
+div#footer {
+    position:relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: auto 25%;
+    padding: 0;
+    
+}
+
+input#conv {
+    background-color: #1251a0;
+    width: 200px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+input#conv:hover {
+    background-color: #1251a1;
+    border-color: #999;
+    color:#999;
+}
+
+input#value1, input#value2 {
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+    font-size: 11pt;
+    font-weight: bold;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+footer#rodape p {
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de Moedas</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 id="titulo">
+            Conversor de Moedas
+        </h1>
+        <div class="nova-cotacao" id="nova-cotacao" style="padding:20px 0;">
+            <div class="row" id="div-row" style="text-align: center">
+                <form method="get" name="form_nova_cotacao" class="columns small-12" id="form_nova_cotacao"></form>
+                    <div class="columns small-12 medium-12 large-4 large-offset-2" style="margin-left: 15.5% !important; margin-bottom: -30px ">
+                        <div class="wrap-input-cotacao wrap-valor" style="margin: 5px 0">
+                            <span id="spryselect1">
+                                <select name="moedas" id="moeda1" autocomplete="off" oninput="muda_titulo()" onchange="troca_bandeira1()">
+                                    <option value="USD" selected>Dólar (USD)</option>
+                                    <option value="EUR">Euro (EUR)</option>
+                                    <option value="GBP">Libra (GBP)</option>
+                                    <option value="BRL">Real (BRL)</option>
+                                </select>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <img id="img_moeda1" src="moeda-8.webp" style="border-radius: 100%;position: relative;top: -44px;left: -43%;" title="Conversor de Moeda: Dólar para Real" width="32">
+                    </div>
+                    <div class="columns small-12 medium-12 large-4 end" style="margin-bottom: -30px">
+                        <div class="wrap-input-cotacao wrap-valor" style="margin: 5px 0">
+                            <span id="spryselect2">
+                                <select name="moedas" id="moeda2" autocomplete="off" oninput="muda_titulo()" onchange="troca_bandeira2()">
+                                    <option value="USD">Dólar (USD)</option>
+                                    <option value="EUR">Euro (EUR)</option>
+                                    <option value="BRL" selected>Real (BRL)</option>
+                                </select>
+                            </span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <img id="img_moeda2" src="moeda-26.webp" style="border-radius: 100%;position: relative;top: -44px;left: -43%;" title="Conversor de Moeda: Dólar para Real" width="32">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <h2>
+                Digite o valor
+            </h2>
+            <p>
+                <input type="number" id="value1" min="0.01" step="0.01" placeholder="USD" autocomplete="off">
+                <input type="text" id="value2" placeholder="BRL" autocomplete="off" readonly>
+            </p>
+            <p>
+                <input id="conv" type="button" value="Converter" onclick="converter()" >
+            </p>
+        </div>
+        <footer id="rodape">
+            <p>Copyright &copy; 2021 - by Stefferson Thallys <br/>
+            <a href="https://www.linkedin.com/in/stefferson-thallys-6309851a2/" target="_blank">LinkedIn</a> | <a href="https://github.com/maphstay" target="_blank">GitHub</a></p>
+        </footer>
+    </body>
+</html>
