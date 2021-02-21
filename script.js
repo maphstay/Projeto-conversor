@@ -42,10 +42,10 @@ function limpa_campos() {
 }
             
 function troca_bandeira1 () {
-    let fotousd = "moeda-8.webp"
-    let fotoeur = "moeda-11.webp"
-    let fotogbp = "moeda-15.webp"
-    let fotobrl = "moeda-26.webp"
+    let fotousd = "imagens/moeda-8.webp"
+    let fotoeur = "imagens/moeda-11.webp"
+    let fotogbp = "imagens/moeda-15.webp"
+    let fotobrl = "imagens/moeda-26.webp"
     let value1 = document.getElementById('moeda1').value;
     if (value1 == "USD") {
         return document.getElementById('img_moeda1').src = fotousd;
@@ -59,9 +59,9 @@ function troca_bandeira1 () {
 } 
  
 function troca_bandeira2 () {
-    let fotousd = "moeda-8.webp"
-    let fotoeur = "moeda-11.webp"
-    let fotobrl = "moeda-26.webp"
+    let fotousd = "imagens/moeda-8.webp"
+    let fotoeur = "imagens/moeda-11.webp"
+    let fotobrl = "imagens/moeda-26.webp"
     let value2 = document.getElementById('moeda2').value;
     if (value2 == "USD") {
         return document.getElementById('img_moeda2').src = fotousd;
